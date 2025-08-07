@@ -4,6 +4,7 @@ This website has been converted from a single-page application to a multi-page s
 
 ## File Structure
 
+
 ```
 ├── index.html              # Main homepage with services and testimonials
 ├── about.html              # About us page with team and company info
@@ -114,3 +115,4 @@ Update the social media links in the footer sections of all pages:
 - All JavaScript is in `js/main.js`
 - Update contact information in all footer sections when needed
 - Test forms regularly to ensure proper functionality
+
