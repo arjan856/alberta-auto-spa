@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Detailing | Alberta Advantage Auto Spa</title>
+    <meta name="description" content="Book your premium car detailing appointment in Edmonton. Choose from our various packages and schedule your service today.">
+    <meta name="keywords" content="book car detailing Edmonton, schedule auto detailing appointment, Edmonton car wash booking, professional car detailing booking, Alberta Advantage Auto Spa appointment, ceramic coating booking Edmonton, paint protection appointment, interior detailing booking, exterior detailing schedule, luxury car detailing booking Edmonton, YEG car detailing appointment, contact Alberta auto spa, book car care Edmonton, vehicle detailing appointment, truck detailing booking">
+    <meta name="author" content="Alberta Advantage Auto Spa">
+    <link rel="icon" type="image/png" href="images/Alberta-autospa-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema Markup for Local Business Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Car Detailing",
+      "name": "Car Detailing Services",
+      "description": "Professional car detailing services in Edmonton including interior and exterior cleaning, ceramic coating, and paint protection.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Alberta Advantage Auto Spa",
+        "image": "https://yourwebsite.com/images/Alberta-autospa-logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2045 209A St NW",
+          "addressLocality": "Edmonton",
+          "addressRegion": "AB",
+          "addressCountry": "CA"
+        },
+        "telephone": "825-785-7352",
+        "email": "albertautospa@gmail.com",
+        "url": "https://yourwebsite.com",
+        "openingHours": "Mo-Sa 08:00-18:00",
+        "priceRange": "$49.99-$149.99"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Edmonton"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Car Detailing Packages",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Prairie Refresh"
+            },
+            "price": "49.99",
+            "priceCurrency": "CAD"
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Foothills Deluxe"
+            },
+            "price": "79.99",
+            "priceCurrency": "CAD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Northern Elite"
+            },
+            "price": "99.99",
+            "priceCurrency": "CAD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "The Alberta Special"
+            },
+            "price": "149.99", 
+            "priceCurrency": "CAD"
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Bubble Animation -->
+    <div class="bubbles" id="bubbles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <img src="images/Alberta-autospa-logo.png" alt="Alberta Auto Spa Logo" class="nav-logo-img" width="40" height="40">
+                ADVANTAGE <span>AUTO SPA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" aria-current="page">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <main class="section booking-page" aria-label="Booking form">
+        <h1 class="section-title">Book Your Detailing Appointment</h1>
+        <div class="booking-form">
+            <form id="bookingForm" action="https://formsubmit.co/albertautospa@gmail.com" method="POST" novalidate>
+                <input type="hidden" name="_subject" value="New Booking Request">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option value="8:00 AM">8:00 AM</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="package">Package Selection *</label>
+                        <select id="package" name="package" required>
+                            <option value="">Choose a package</option>
+                            <option value="Prairie Refresh">Prairie Refresh ($49.99)</option>
+                            <option value="Foothills Deluxe">Foothills Deluxe ($79.99)</option>
+                            <option value="Northern Elite">Northern Elite ($99.99)</option>
+                            <option value="Alberta Special">The Alberta Special ($149.99)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="vehicle">Vehicle Information</label>
+                    <input type="text" id="vehicle" name="vehicle" placeholder="Year, Make, Model (e.g., 2020 Honda Civic)">
+                </div>
+
+                <div class="form-group">
+                    <label for="addons">Add-On Services (check all that apply)</label>
+                    <div class="addon-checkboxes">
+                        <label class="addon-checkbox-label">
+                            <input type="checkbox" name="addons" value="Rim Detailing (+$10)" class="addon-checkbox-input">
+                            Rim Detailing (+$10)
+                        </label>
+                        <label class="addon-checkbox-label">
+                            <input type="checkbox" name="addons" value="Odor Bomb (+$20)" class="addon-checkbox-input">
+                            Odor Bomb (+$20)
+                        </label>
+                        <label class="addon-checkbox-label">
+                            <input type="checkbox" name="addons" value="Engine Bay Clean (+$20)" class="addon-checkbox-input">
+                            Engine Bay Clean (+$20)
+                        </label>
+                        <label class="addon-checkbox-label">
+                            <input type="checkbox" name="addons" value="Pet Hair Annihilator (+$15)" class="addon-checkbox-input">
+                            Pet Hair Annihilator (+$15)
+                        </label>
+                        <label class="addon-checkbox-label">
+                            <input type="checkbox" name="addons" value="Headlight Restoration (+$25)" class="addon-checkbox-input">
+                            Headlight Restoration (+$25)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Requests or Notes</label>
+                    <textarea id="message" name="message" placeholder="Any special requests, concerns about your vehicle, or questions for us..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Service Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select service location</option>
+                        <option value="Our Shop - 2045 209A St NW, Edmonton">Our Shop - 2045 209A St NW, Edmonton</option>
+                        <option value="Mobile Service - Your Location">Mobile Service - Your Location (Additional fee may apply)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn submit-btn-full">
+                    <i class="fas fa-calendar-check submit-btn-icon"></i>
+                    Submit Booking Request
+                </button>
+
+                <p class="booking-note">
+                    <i class="fas fa-info-circle"></i> 
+                    We'll confirm your appointment within 24 hours via phone or email.
+                </p>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-help">
+            <h3>Need Help or Have Questions?</h3>
+            <div class="contact-help-grid">
+                <div>
+                    <i class="fas fa-phone contact-help-icon"></i>
+                    <h4>Call Us</h4>
+                    <p class="phone">825-785-7352</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope contact-help-icon"></i>
+                    <h4>Email Us</h4>
+                    <p class="email">albertautospa@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-clock contact-help-icon"></i>
+                    <h4>Hours</h4>
+                    <p class="hours">Mon-Sat: 8AM-6PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer aria-label="Footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Alberta Advantage Auto Spa is Edmonton's premier car detailing service, specializing in restoring vehicles to their showroom condition using premium products and techniques.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@yegautospa" title="TikTok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 2045 209A St NW, Edmonton, AB</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:825-785-7352">825-785-7352</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:albertautospa@gmail.com">albertautospa@gmail.com</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Alberta Advantage Auto Spa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Wheel Animation Button -->
+    <button class="wheel-animation" id="wheelBtn" aria-label="Scroll to top">
+        <i class="fas fa-car"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

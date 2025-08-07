@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Alberta Advantage Auto Spa</title>
+    <meta name="description" content="View our premium car detailing transformations. Before/after comparisons of luxury vehicles, trucks, and daily drivers in Edmonton.">
+    <meta name="keywords" content="car detailing gallery Edmonton, before and after car detailing, Edmonton detailing photos, luxury car detailing gallery, Alberta auto spa portfolio, ceramic coating results, paint protection gallery, interior detailing photos, car transformation Edmonton, professional car detailing results, YEG car detailing gallery, vehicle detailing showcase">
+    <meta name="author" content="Alberta Advantage Auto Spa">
+    <link rel="icon" type="image/png" href="images/Alberta-autospa-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Bubble Animation -->
+    <div class="bubbles" id="bubbles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <img src="images/Alberta-autospa-logo.png" alt="Alberta Auto Spa Logo" class="nav-logo-img" width="40" height="40" loading="eager">
+                ADVANTAGE <span>AUTO SPA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <main class="gallery-page">
+        <h1 class="section-title">Our Detailing Gallery</h1>
+        <p class="gallery-intro">
+            Witness the transformation we deliver for every vehicle. From daily drivers to luxury cars, we treat each one with premium care and attention to detail.
+        </p>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Work</button>
+            <button class="filter-btn" data-filter="exterior">Exterior</button>
+            <button class="filter-btn" data-filter="interior">Interior</button>
+            <button class="filter-btn" data-filter="ceramic">Ceramic Coatings</button>
+            <button class="filter-btn" data-filter="trucks">Luxury Detailing</button>
+        </div>
+        
+        <!-- Featured Before/After Slider -->
+        <div class="comparison-slider">
+            <div class="comparison-container">
+                <img src="images/image-civic-dirty.jpg" alt="Dirty Honda Civic before detailing" class="before-image">
+                <img src="images/clean-civic.jpg" alt="Clean Honda Civic after detailing" class="after-image">
+                <div class="slider-handle"></div>
+            </div>
+            <div class="comparison-labels">
+                <span>BEFORE</span>
+                <span>AFTER</span>
+            </div>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- BMW X1 Interior -->
+            <div class="gallery-item" data-category="interior">
+                <img src="images/bmw-x1-interior-back.jpg" alt="BMW X1 interior detailing" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>BMW X1 Interior</h3>
+                    <p>Complete interior restoration</p>
+                </div>
+            </div>
+            
+            <!-- Audi R8 -->
+            <div class="gallery-item" data-category="ceramic">
+                <img src="images/audi-r8.jpg" alt="Audi R8 detailing" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Audi R8</h3>
+                    <p>Premium ceramic coating</p>
+                </div>
+            </div>
+            
+            <!-- Lamborghini Aventador -->
+            <div class="gallery-item" data-category="ceramic">
+                <img src="images/aventidor-c.jpg" alt="Lamborghini Aventador detailing" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>Ceramic coating application</p>
+                </div>
+            </div>
+            
+            <!-- Headlight Restoration -->
+            <div class="gallery-item" data-category="exterior">
+                <img src="images/aventidor-close-up-headlight.jpg" alt="Headlight restoration" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Headlight Restoration</h3>
+                    <p>Professional clarity restoration</p>
+                </div>
+            </div>
+            
+            <!-- Dodge Charger Ceramic -->
+            <div class="gallery-item" data-category="ceramic">
+                <img src="images/dodge-charger.jpg" alt="Dodge Charger ceramic coating" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Dodge Charger</h3>
+                    <p>Ceramic spray coating</p>
+                </div>
+            </div>
+            
+            <!-- BMW X1 Side View -->
+            <div class="gallery-item" data-category="trucks">
+                <img src="images/bmw-x1-side-pic.jpg" alt="BMW X1 luxury detailing" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>BMW X1</h3>
+                    <p>Luxury detailing package</p>
+                </div>
+            </div>
+            
+            <!-- BMW M4 -->
+            <div class="gallery-item" data-category="trucks">
+                <img src="images/red-m4.jpg" alt="BMW M4 detailing" loading="lazy" class="object-top">
+                <div class="gallery-overlay">
+                    <h3>BMW M4</h3>
+                    <p>Premium exterior package</p>
+                </div>
+            </div>
+            
+            <!-- Jetta Rims -->
+            <div class="gallery-item" data-category="exterior">
+                <img src="images/clean-jetta-rims.jpg" alt="Jetta wheel detailing" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Wheel Detailing</h3>
+                    <p>Deep cleaning and protection</p>
+                </div>
+            </div>
+            
+            <!-- BMW X1 Engine Bay -->
+            <div class="gallery-item" data-category="exterior">
+                <img src="images/bmw-x1-close-up-engine-bay-clean.jpg" alt="BMW X1 engine bay detailing" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Engine Bay Detailing</h3>
+                    <p>Degreasing and protection</p>
+                </div>
+            </div>
+            
+            <!-- Garage Setup -->
+            <div class="gallery-item" data-category="all">
+                <img src="images/garage-pic2.jpg" alt="Professional detailing setup" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Our Workspace</h3>
+                    <p>Professional detailing environment</p>
+                </div>
+            </div>
+            
+            <!-- Car Wash -->
+            <div class="gallery-item" data-category="exterior">
+                <img src="images/wash-a-car-1822415_640.jpg" alt="Professional car wash" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Premium Wash</h3>
+                    <p>Hand wash with premium products</p>
+                </div>
+            </div>
+            
+            <!-- Ford F-150 -->
+            <div class="gallery-item" data-category="exterior">
+                <img src="images/f150-7572360_640.jpg" alt="Ford F-150 detailing" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Ford F-150</h3>
+                    <p>Complete truck detailing</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Before/After Grid -->
+        <div class="before-after-grid">
+            <div class="before-after-item">
+                <h3>Honda Civic Transformation</h3>
+                <div class="before-after-images">
+                    <div class="ba-image">
+                        <img src="images/image-civic-dirty.jpg" alt="Dirty Honda Civic before detailing" loading="lazy">
+                        <span class="image-label before-label">BEFORE</span>
+                    </div>
+                    <div class="ba-image">
+                        <img src="images/clean-civic.jpg" alt="Clean Honda Civic after detailing" loading="lazy">
+                        <span class="image-label after-label">AFTER</span>
+                    </div>
+                </div>
+                <p>Complete exterior wash, clay bar treatment, and ceramic spray application</p>
+            </div>
+            
+            <div class="before-after-item">
+                <h3>BMW X1 Interior Transformation</h3>
+                <div class="before-after-images">
+                    <div class="ba-image">
+                        <img src="images/bmw-x1-dirty-(before).jpg" alt="Dirty BMW X1 interior before detailing" loading="lazy">
+                        <span class="image-label before-label">BEFORE</span>
+                    </div>
+                    <div class="ba-image">
+                        <img src="images/bmw-x1-interior-side-pic-2.jpg" alt="Clean BMW X1 interior after detailing" loading="lazy">
+                        <span class="image-label after-label">AFTER</span>
+                    </div>
+                </div>
+                <p>Complete interior deep cleaning with stain removal and leather conditioning</p>
+            </div>
+            
+            <div class="before-after-item">
+                <h3>Exterior Detailing</h3>
+                <div class="before-after-images">
+                    <div class="ba-image">
+                        <img src="images/jetta-dirty.png" alt="Dirty Volkswagen Jetta before detailing" loading="lazy">
+                        <span class="image-label before-label">BEFORE</span>
+                    </div>
+                    <div class="ba-image">
+                        <img src="images/back-of-clean-jetta.jpg" alt="Clean Volkswagen Jetta after detailing" loading="lazy">
+                        <span class="image-label after-label">AFTER</span>
+                    </div>
+                </div>
+                <p>Full exterior wash, clay bar, polish, and sealant application</p>
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="gallery-cta">
+            <h3>Ready to Transform Your Vehicle?</h3>
+            <p>Let us give your car the same professional treatment. Book your appointment today!</p>
+            <div class="cta-buttons">
+                <a href="booking.html" class="btn">Book Now</a>
+                <a href="tel:825-785-7352" class="btn btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer aria-label="Footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Alberta Advantage Auto Spa is Edmonton's premier car detailing service, specializing in restoring vehicles to their showroom condition using premium products and techniques.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@yegautospa" title="TikTok" aria-label="Visit our TikTok page" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 2045 209A St NW, Edmonton, AB</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:825-785-7352">825-785-7352</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:albertautospa@gmail.com">albertautospa@gmail.com</a></p>
+                </address>
+                
+                <!-- Enhanced Contact Options -->
+                <div class="messaging-options">
+                    <a href="sms:8257857352" class="contact-btn sms-btn">
+                        <i class="fas fa-sms"></i> Text Us
+                    </a>
+                    <a href="https://wa.me/18257857352" class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trust Badges -->
+        <div class="trust-badges">
+            <div class="trust-item">
+                <i class="fas fa-shield-check"></i>
+                <span>Fully Insured & Bonded</span>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-certificate"></i>
+                <span>Certified Detailer</span>
+            </div>
+            <div class="google-reviews">
+                <i class="fab fa-google"></i>
+                <span>4.9/5 ★★★★★</span>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Alberta Advantage Auto Spa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Wheel Animation Button -->
+    <button class="wheel-animation" id="wheelBtn" aria-label="Scroll to top">
+        <i class="fas fa-car"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+        
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Before/After Slider with performance optimization
+        const sliderHandle = document.querySelector('.slider-handle');
+        const beforeImage = document.querySelector('.before-image');
+        const comparisonContainer = document.querySelector('.comparison-container');
+        
+        if (sliderHandle && beforeImage && comparisonContainer) {
+            let isDragging = false;
+            let animationFrame;
+            
+            function updateSliderPosition(clientX) {
+                // Cancel previous animation frame
+                if (animationFrame) {
+                    cancelAnimationFrame(animationFrame);
+                }
+                
+                animationFrame = requestAnimationFrame(() => {
+                    const rect = comparisonContainer.getBoundingClientRect();
+                    let x = clientX - rect.left;
+                    x = Math.max(0, Math.min(x, rect.width));
+                    const percent = (x / rect.width) * 100;
+                    
+                    sliderHandle.style.left = `${percent}%`;
+                    beforeImage.style.clipPath = `polygon(0 0, ${percent}% 0, ${percent}% 100%, 0 100%)`;
+                });
+            }
+            
+            // Mouse events
+            comparisonContainer.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                comparisonContainer.style.cursor = 'grabbing';
+                updateSliderPosition(e.clientX);
+                e.preventDefault();
+            });
+            
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                updateSliderPosition(e.clientX);
+            });
+            
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+                comparisonContainer.style.cursor = 'grab';
+            });
+            
+            // Touch events
+            comparisonContainer.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                updateSliderPosition(e.touches[0].clientX);
+                e.preventDefault();
+            }, { passive: false });
+            
+            document.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                updateSliderPosition(e.touches[0].clientX);
+                e.preventDefault();
+            }, { passive: false });
+            
+            document.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+        }
+        
+        // Gallery Filtering with performance optimization
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.dataset.filter;
+                
+                // Use requestAnimationFrame for smoother filtering
+                requestAnimationFrame(() => {
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+        
+        // Scroll to top button with spinning animation
+        const wheelBtn = document.getElementById('wheelBtn');
+        
+        window.addEventListener('scroll', () => {
+            wheelBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+        });
+        
+        wheelBtn.addEventListener('click', () => {
+            // Add spinning animation
+            wheelBtn.classList.add('spinning');
+            
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            
+            // Remove spinning animation after scroll completes
+            setTimeout(() => {
+                wheelBtn.classList.remove('spinning');
+            }, 1000);
+        });
+        
+        // Optimized image loading
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            
+            // Use Intersection Observer for lazy loading optimization
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        
+                        img.onload = function() {
+                            this.classList.add('loaded');
+                        };
+                        
+                        img.onerror = function() {
+                            console.error('Failed to load image: ' + this.src);
+                            this.style.opacity = '0.3';
+                            this.classList.add('loaded');
+                        };
+                        
+                        // If image is already loaded (cached)
+                        if (img.complete) {
+                            img.classList.add('loaded');
+                        }
+                        
+                        observer.unobserve(img);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '50px'
+            });
+            
+            images.forEach(img => {
+                imageObserver.observe(img);
+            });
+            
+            // Preload critical images
+            const criticalImages = [
+                'images/image-civic-dirty.jpg',
+                'images/clean-civic.jpg'
+            ];
+            
+            criticalImages.forEach(src => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
