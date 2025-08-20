@@ -1,0 +1,1 @@
+# No additional Python packages required; uses Shotcut's melt executable
